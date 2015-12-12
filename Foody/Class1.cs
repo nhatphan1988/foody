@@ -4,9 +4,8 @@
     {
         public void start()
         {
-           
+            x = 10;
         }
-
         public int x = 0;
 
     }
