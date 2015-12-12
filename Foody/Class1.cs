@@ -7,5 +7,7 @@
            
         }
 
+        public int x = 0;
+
     }
 }
