@@ -1,0 +1,6 @@
+C:\setting project\Demo\Foody\Foody\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll.config
+C:\setting project\Demo\Foody\Foody\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.dll
+C:\setting project\Demo\Foody\Foody\WcfServiceLibrary1\bin\Debug\WcfServiceLibrary1.pdb
+C:\setting project\Demo\Foody\Foody\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.csprojResolveAssemblyReference.cache
+C:\setting project\Demo\Foody\Foody\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.dll
+C:\setting project\Demo\Foody\Foody\WcfServiceLibrary1\obj\Debug\WcfServiceLibrary1.pdb

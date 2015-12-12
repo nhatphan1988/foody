@@ -1,0 +1,113 @@
+﻿<div class="row row-expand">
+    <div class="vendor-filter">
+        <div class="row-expand">
+            @Html.Partial("~/Views/Shared/_VendorFilter.cshtml")
+        </div>
+        <div class="row-expand">
+            @Html.Partial("~/Views/Shared/_OrderPartial.cshtml")
+        </div>
+    </div>
+    <div class="vendor-list">
+        <article>
+            <div class="row">
+                <div class="col-md-3">
+                    <a href="">
+                        <img class="img-logo" src="~/Content/themes/base/images/KFC.jpg" />
+                    </a>
+                </div>
+                <div class="col-md-9">
+                    <div>
+                        <h2>KFC</h2>
+                    </div>
+                    <ul class="vendor-cuisines">
+                        <li>American</li>
+                        <li>Đồ Ăn Nhanh</li>
+                        <li>Breakfast</li>
+                        <li>Dinner</li>
+                    </ul>
+                    <div class="text-left">
+                        <div class="row-text-center" data-toggle="collapse" data-target="#demo">
+                            <i class="uk-icon-plus-square menu"></i>
+                            <h3 class="inline" data-toggle="tooltip" title="Load menu!">Menu</h3>
+                        </div>
+                        <div id="demo" class="collapse">
+                            @Html.Partial("~/Views/Shared/_MenuPartial.cshtml")
+                        </div>
+                </div>
+            </div>
+        </article>
+        @*<article>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="img-logo" src="~/Content/themes/base/images/KFC.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div>
+                            <h2>KFC</h2>
+                        </div>
+                        <ul class="vendor-cuisines">
+                            <li>American</li>
+                            <li>Đồ Ăn Nhanh</li>
+                            <li>Breakfast</li>
+                            <li>Dinner</li>
+                        </ul>
+                        <div class="text-left">
+                            <span class="uk-icon-plus-square"></span>
+                            Menu
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="img-logo" src="~/Content/themes/base/images/KFC.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div>
+                            <h2>KFC</h2>
+                        </div>
+                        <ul class="vendor-cuisines">
+                            <li>American</li>
+                            <li>Đồ Ăn Nhanh</li>
+                            <li>Breakfast</li>
+                            <li>Dinner</li>
+                        </ul>
+                        <div class="text-left">
+                            <span class="uk-icon-plus-square"></span>
+                            Menu
+                        </div>
+                    </div>
+                </div>
+            </article>
+            <article>
+                <div class="row">
+                    <div class="col-md-3">
+                        <a href="">
+                            <img class="img-logo" src="~/Content/themes/base/images/KFC.jpg" />
+                        </a>
+                    </div>
+                    <div class="col-md-9">
+                        <div>
+                            <h2>KFC</h2>
+                        </div>
+                        <ul class="vendor-cuisines">
+                            <li>American</li>
+                            <li>Đồ Ăn Nhanh</li>
+                            <li>Breakfast</li>
+                            <li>Dinner</li>
+                        </ul>
+                        <div class="text-left">
+                            <span class="uk-icon-plus-square">Menu</span>
+                        </div>
+                    </div>
+                </div>
+            </article>*@
+        <div class="row-text-center"><h3><a>Load more</a></h3></div>
+    </div>
+</div>
+

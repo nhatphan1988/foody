@@ -1,0 +1,23 @@
+D:\NhatProject\Website\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe.config
+D:\NhatProject\Website\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe
+D:\NhatProject\Website\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.pdb
+D:\NhatProject\Website\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.dll
+D:\NhatProject\Website\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.xml
+D:\NhatProject\Website\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.exe
+D:\NhatProject\Website\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.pdb
+C:\project\Foody\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe.config
+C:\project\Foody\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe
+C:\project\Foody\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.pdb
+C:\project\Foody\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.dll
+C:\project\Foody\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.xml
+C:\project\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.csprojResolveAssemblyReference.cache
+C:\project\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.exe
+C:\project\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.pdb
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe.config
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\bin\Debug\FoodyClientSide.pdb
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.dll
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.xml
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.csprojResolveAssemblyReference.cache
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.exe
+C:\setting project\Demo\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.pdb

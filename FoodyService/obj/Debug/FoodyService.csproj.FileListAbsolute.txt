@@ -1,0 +1,12 @@
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\FoodyService.exe.config
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\FoodyService.exe
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\FoodyService.pdb
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\EntityFramework.dll
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\EntityFramework.SqlServer.dll
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\EntityFramework.xml
+D:\NhatProject\Website\Foody\FoodyService\bin\Debug\EntityFramework.SqlServer.xml
+D:\NhatProject\Website\Foody\FoodyService\obj\Debug\FoodyService.csprojResolveAssemblyReference.cache
+D:\NhatProject\Website\Foody\FoodyService\obj\Debug\FoodyService.csproj.GenerateResource.Cache
+D:\NhatProject\Website\Foody\FoodyService\obj\Debug\FoodyService.exe
+D:\NhatProject\Website\Foody\FoodyService\obj\Debug\FoodyService.pdb
+D:\NhatProject\Website\Foody\FoodyService\obj\Debug\FoodyService.ProjectInstaller.resources

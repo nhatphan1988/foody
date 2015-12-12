@@ -1,0 +1,5 @@
+D:\NhatProject\Website\Foody\FoodyRespository\bin\Debug\FoodyRespository.dll
+D:\NhatProject\Website\Foody\FoodyRespository\bin\Debug\FoodyRespository.pdb
+D:\NhatProject\Website\Foody\FoodyRespository\obj\Debug\FoodyRespository.csprojResolveAssemblyReference.cache
+D:\NhatProject\Website\Foody\FoodyRespository\obj\Debug\FoodyRespository.dll
+D:\NhatProject\Website\Foody\FoodyRespository\obj\Debug\FoodyRespository.pdb

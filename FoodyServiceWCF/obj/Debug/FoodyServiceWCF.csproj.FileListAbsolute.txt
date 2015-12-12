@@ -1,0 +1,5 @@
+C:\setting project\Demo\Foody\Foody\FoodyServiceWCF\bin\FoodyServiceWCF.dll.config
+C:\setting project\Demo\Foody\Foody\FoodyServiceWCF\bin\FoodyServiceWCF.dll
+C:\setting project\Demo\Foody\Foody\FoodyServiceWCF\bin\FoodyServiceWCF.pdb
+C:\setting project\Demo\Foody\Foody\FoodyServiceWCF\obj\Debug\FoodyServiceWCF.dll
+C:\setting project\Demo\Foody\Foody\FoodyServiceWCF\obj\Debug\FoodyServiceWCF.pdb

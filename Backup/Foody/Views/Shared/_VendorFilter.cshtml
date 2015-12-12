@@ -1,0 +1,28 @@
+﻿<div class="main-search-container row-content-expand">
+    <div class="row">
+        @*<div class="col-md-3 row-text-center text-left">
+            @Html.Label("City:")
+        </div>*@
+        <div class="col-md-12 row-center text-right">
+            @Html.DropDownList("Ho Chi Minh", new List<SelectListItem>() {
+    new SelectListItem(){Text="Ho Chi Minh",Value="HCM"}}, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="row">
+        @*<div class="col-md-3 row-text-center text-left">
+            @Html.Label("District:")
+        </div>*@
+        <div class="col-md-12 row-center text-right">
+            @Html.DropDownList("1", new List<SelectListItem>() {
+    new SelectListItem(){Text="1",Value="HCM"}}, new { @class = "form-control" })
+        </div>
+    </div>
+
+    <div class="row">
+        <div class="btn btn-default">
+            Search
+        </div>
+    </div>
+</div>
+
