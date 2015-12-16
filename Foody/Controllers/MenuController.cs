@@ -14,7 +14,7 @@ namespace Foody.Controllers
         }
         public ActionResult Index()
         {
-            return View();
+            return View("Index");
         }
         public ActionResult _MenuPartial()
         {

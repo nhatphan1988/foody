@@ -469,3 +469,9 @@ C:\Repositories\clonefromgithub\foody\Foody.Tests\obj\Debug\Foody.Tests.csproj.A
 C:\Repositories\clonefromgithub\foody\Foody.Tests\obj\Debug\Foody.Tests.csprojResolveAssemblyReference.cache
 C:\Repositories\clonefromgithub\foody\Foody.Tests\obj\Debug\Foody.Tests.dll
 C:\Repositories\clonefromgithub\foody\Foody.Tests\obj\Debug\Foody.Tests.pdb
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\FoodyClientSide.exe
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\FoodyServiceWCF.dll
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\Moq.dll
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\FoodyClientSide.pdb
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\FoodyServiceWCF.pdb
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\Moq.xml

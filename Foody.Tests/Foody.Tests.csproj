@@ -38,6 +38,10 @@
     <Prefer32Bit>false</Prefer32Bit>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Autofac, Version=3.5.0.0, Culture=neutral, PublicKeyToken=17863af14b0044da, processorArchitecture=MSIL">
+      <HintPath>..\packages\Autofac.3.5.2\lib\net40\Autofac.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="Microsoft.Data.Edm, Version=5.6.4.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
       <HintPath>..\packages\Microsoft.Data.Edm.5.6.4\lib\net40\Microsoft.Data.Edm.dll</HintPath>
@@ -49,6 +53,10 @@
     </Reference>
     <Reference Include="Microsoft.VisualStudio.QualityTools.UnitTestFramework, Version=10.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a, processorArchitecture=MSIL">
       <Private>False</Private>
+    </Reference>
+    <Reference Include="Moq, Version=4.2.1510.2205, Culture=neutral, PublicKeyToken=69f491c39445e920, processorArchitecture=MSIL">
+      <HintPath>..\packages\Moq.4.2.1510.2205\lib\net40\Moq.dll</HintPath>
+      <Private>True</Private>
     </Reference>
     <Reference Include="Newtonsoft.Json, Version=7.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
       <HintPath>..\packages\Newtonsoft.Json.7.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
@@ -169,6 +177,22 @@
     <None Include="Service References\ServiceReference1\Service11.wsdl" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\FoodyClientSide\FoodyClientSide.csproj">
+      <Project>{301604ce-18bd-4899-b3ba-35c97c211fbe}</Project>
+      <Name>FoodyClientSide</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodyDomain\FoodyDomain.csproj">
+      <Project>{33d136db-6b20-457e-a219-e10c6d994a50}</Project>
+      <Name>FoodyDomain</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodyResponsitory\FoodyResponsitory.csproj">
+      <Project>{49ae06e9-b021-467b-aa48-92ac94505f3c}</Project>
+      <Name>FoodyResponsitory</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\FoodyServiceWCF\FoodyServiceWCF.csproj">
+      <Project>{eada7ae9-14ee-4cf9-ba69-2cbb62a33528}</Project>
+      <Name>FoodyServiceWCF</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Foody\Foody.csproj">
       <Project>{A37DE0C6-9AC6-4468-9CCA-5FB894B4060D}</Project>
       <Name>Foody</Name>

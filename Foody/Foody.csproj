@@ -433,6 +433,7 @@
       <Generator>MSDiscoCodeGenerator</Generator>
       <LastGenOutput>Reference.cs</LastGenOutput>
     </Content>
+    <Content Include="Views\Menu\Index.cshtml" />
     <None Include="Web References\localhost\Service1.disco" />
     <Content Include="Web.config">
       <SubType>Designer</SubType>
