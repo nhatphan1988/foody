@@ -3,17 +3,15 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap-theme.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
-
+    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/underscore")
     @Scripts.Render("~/bundles/angular")
     @Scripts.Render("~/bundles/appInit")
     @Scripts.Render("~/bundles/orderCtr")
     @Scripts.Render("~/bundles/menuCtr")
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
 </head>
 <body class="color-gray-f1f2f2">
     <div class="body-center">
@@ -21,30 +19,39 @@
             <div class="col-md-12">
                 <nav class="navbar navbar-default">
                     <div class="container-fluid">
-                        <div class="collapse navbar-collapse">
+                        <div class="navbar-header">
+                            <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+                                <span class="sr-only">Toggle navigation</span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                                <span class="icon-bar"></span>
+                            </button>
+                        </div>
+                        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 0.8px;">
                             <ul class="nav navbar-nav">
                                 <li><a href="~/Home/Index" class="bold">Trang chủ</a></li>
                                 <li class="dropdown">
-                                    <a href="#" data-toggle="dropdown" class="dropdown-toggle bold">
-                                    <span class="glyphicon glyphicon-align-justify"></span>
-                                    <div class="inline">Thực đơn</div>
-                                    <b class="caret"></b></a>
+                                    <a href="" class="dropdown-toggle bold" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Thực đơn<span class="caret"></span></a>
                                     <ul class="dropdown-menu">
-                                        <li><a href="#">Đồ ăn vặt</a></li>
-                                        <li><a href="#">Nước uống</a></li>
+                                        <li><a href="https://getbootstrap.com/examples/navbar/#">Đồ ăn</a></li>
+                                        <li><a href="https://getbootstrap.com/examples/navbar/#">Thức uống</a></li>
                                     </ul>
                                 </li>
                                 <li><a href="~/About/About" class="bold">Liên hệ</a></li>
                                 <li><a href="~/About/Difference" class="bold">Khác biệt</a></li>
                             </ul>
-                            <form class="navbar-form navbar-right" role="search" action="~/Menu/SearchMenuName" method="post">
-                                <div class="form-group">
-                                    <input type="text" class="form-control" placeholder="Search" name="menuName">
-                                </div>
-                                <button type="submit" class="btn btn-primary">Submit</button>
-                            </form>
-                        </div>
-                    </div><!-- /.container-fluid -->
+                            <ul class="nav navbar-nav navbar-right">
+                                <li>
+                                    <form class="navbar-form navbar-right" role="search" action="~/Menu/SearchMenuName" method="post">
+                                        <div class="form-group">
+                                            <input type="text" class="form-control" placeholder="Search" name="menuName">
+                                        </div>
+                                        <button type="submit" class="btn btn-primary">Submit</button>
+                                    </form>
+                                </li>
+                            </ul>
+                        </div><!--/.nav-collapse -->
+                    </div><!--/.container-fluid -->
                 </nav>
             </div>
         </div>
@@ -52,7 +59,7 @@
             <div class="col-md-12">
                 <img class="img-banner" src="http://abundanthealthunlimited.com/wp-content/uploads/2014/12/cropped-fruit-banner.jpg">
             </div>
-            
+
         </div>
 
         <div class="row">
@@ -116,7 +123,7 @@
                     </div>
                 </div>
 
-                <div class="similar-collections row" >
+                <div class="similar-collections row">
                     <h3 class="bold">
                         Các bộ sưu tập liên quan
                     </h3>
@@ -124,15 +131,15 @@
                         <li>
                             <div class="block-collection">
                                 <div class="title-wrapper">
-                                    <a class="" href="/kikibabeboo/25k-to-banh-canh-cua-gia-truyen-ngay-khu-an-uong-quan-10-1442308697" >
-                                        <h4 title="25k/tô bánh canh cua gia truyền ngay khu ăn uống quận 10  của Kỳ Kỳ" >
+                                    <a class="" href="/kikibabeboo/25k-to-banh-canh-cua-gia-truyen-ngay-khu-an-uong-quan-10-1442308697">
+                                        <h4 title="25k/tô bánh canh cua gia truyền ngay khu ăn uống quận 10  của Kỳ Kỳ">
                                             25k/tô bánh canh cua gia truyền ngay khu ăn uống quận 10
                                         </h4>
                                     </a>
-                                </div><div class="cover" >
-                                    <img src="http://tea-4.lozi.vn/v1/assets/images/48dbebc968c74a6192e82500cdbaa6e9" alt="http://tea-4.lozi.vn/v1/assets/images/48dbebc968c74a6192e82500cdbaa6e9" style="background:gray;" >
-                                    <div class="count-photo" >
-                                        <span >
+                                </div><div class="cover">
+                                    <img src="http://tea-4.lozi.vn/v1/assets/images/48dbebc968c74a6192e82500cdbaa6e9" alt="http://tea-4.lozi.vn/v1/assets/images/48dbebc968c74a6192e82500cdbaa6e9" style="background:gray;">
+                                    <div class="count-photo">
+                                        <span>
                                             <span>16</span>
                                             <span> ảnh</span>
                                         </span>
@@ -243,7 +250,8 @@
                 </div>
             </div>
         </div>
-        
-    @RenderSection("scripts", required: false)
+
+        @RenderSection("scripts", required: false)
+    </div>
 </body>
 </html>

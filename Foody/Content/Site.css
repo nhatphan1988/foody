@@ -352,12 +352,6 @@ ul, ol, h3, h2 {
     margin-bottom: 25px 25px 25px 25px;
 }
 
-body {
-    min-width: 1000px;
-    text-align: center;
-    margin: 0 auto;
-}
-
 .main-search-container {
     position: relative;
     border-radius: 4px;
@@ -378,7 +372,11 @@ a:hover {
 
 .body-center
 {
-    width:1500px;
     margin:0 auto;
 }
 
+body {
+    text-align: center;
+    margin: 0 auto;
+    width:100%;
+}

@@ -22,24 +22,30 @@
                         {
                             foreach (var menu in Model)
                             {
-                                <div class="row list-menu-item-info">
-                                    <div class="col-md-4">
-                                        <img class="img-logo-small" src="@menu.ImageUrl" />
-                                    </div>
-                                    <div class="col-md-4">
-                                        <div class="bold">@menu.Name</div>
-                                        <div>@menu.Description</div>
-                                    </div>
-                                    <div class="col-md-4 text-center">
-                                        <a ng-click="@("addCartItem('"+Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(menu))+"')")"><i class="glyphicon glyphicon-pencil active"></i></a>
+                                <div class="list-menu-item-info">
+                                    <div class="row">
+                                        <div class="col-md-4">
+                                            <img class="img-logo-small" src="@menu.ImageUrl" />
+                                        </div>
+                                        <div class="col-md-4">
+                                            <div class="bold">@menu.Name</div>
+                                            <div>@menu.Description</div>
+                                        </div>
+                                        <div class="col-md-4 text-center">
+                                            <a ng-click="@("addCartItem('"+Html.Raw(Newtonsoft.Json.JsonConvert.SerializeObject(menu))+"')")"><i class="glyphicon glyphicon-pencil active"></i></a>
+                                        </div>
                                     </div>
                                 </div>
                             }
                         }
                         else
                         {
-                            <div class="row list-menu-item-info">
-                                Không tìm thấy
+                            <div class="list-menu-item-info">
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        Không tìm thấy
+                                    </div>
+                                </div>
                             </div>
                         }
 
