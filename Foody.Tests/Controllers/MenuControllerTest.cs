@@ -33,14 +33,14 @@ namespace Foody.Tests.Controllers
                 Name = "Bo bia"
             } });
 
-            MenuController controller = new MenuController(menuResponsitory.Object);
-                // Act
-                PartialViewResult result = controller._MenuPartial() as PartialViewResult;
-                var menus = (List<MenuEntity>)result.Model;
-                // Assert
-                Assert.AreEqual("_MenuPartial", result.ViewName);
-                Assert.AreEqual("Bo bia", menus.FirstOrDefault().Name);
-            //}
+            //MenuController controller = new MenuController(menuResponsitory.Object);
+            //    // Act
+            //    PartialViewResult result = controller._MenuPartial() as PartialViewResult;
+            //    var menus = (List<MenuEntity>)result.Model;
+            //    // Assert
+            //    Assert.AreEqual("_MenuPartial", result.ViewName);
+            //    Assert.AreEqual("Bo bia", menus.FirstOrDefault().Name);
+            ////}
 
         }
     }
