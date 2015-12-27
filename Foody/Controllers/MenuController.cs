@@ -2,15 +2,17 @@
 using FoodyDomain.Model;
 using System.Web.Mvc;
 using System.Linq;
+using Foody.App_Start;
 
 namespace Foody.Controllers
 {
     public class MenuController : Controller
     {
+        
         private IResponsitory<MenuEntity> _menuResponsitory;
         public MenuController(IResponsitory<MenuEntity> menuResponsitory)
         {
-            _menuResponsitory = menuResponsitory;
+            _menuResponsitory = menuResponsitory;         
         }
         public ActionResult Index()
         {
