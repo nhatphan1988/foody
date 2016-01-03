@@ -1,16 +1,16 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
+﻿using FoodyDomain.App_Code;
+using System.ComponentModel.DataAnnotations;
 
 namespace FoodyDomain.Model
 {
-    public class MenuEntity:IEntity
+    public class MenuEntity : IEntity
     {
+        [Required]
         public string Name { get; set; }
         public string Description { get; set; }
+        [Required]
         public string Price { get; set; }
+        [Required]
         public string ImageUrl { get; set; }
-        public int Number { get; set; }
     }
 }

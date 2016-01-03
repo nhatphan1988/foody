@@ -1,16 +1,8 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Web.Mvc;
+﻿using System.Collections.Generic;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
-using Foody;
-using Foody.Controllers;
 using Moq;
 using FoodyDomain;
 using FoodyDomain.Model;
-using Autofac;
-using FoodyRespository.Respository;
 
 namespace Foody.Tests.Controllers
 {

@@ -21,3 +21,11 @@ C:\project\checkout\project\trunk\Foody\Foody\FoodyDomain\bin\Debug\Newtonsoft.J
 C:\project\checkout\project\trunk\Foody\Foody\FoodyDomain\obj\Debug\FoodyDomain.csprojResolveAssemblyReference.cache
 C:\project\checkout\project\trunk\Foody\Foody\FoodyDomain\obj\Debug\FoodyDomain.dll
 C:\project\checkout\project\trunk\Foody\Foody\FoodyDomain\obj\Debug\FoodyDomain.pdb
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Debug\FoodyDomain.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Debug\FoodyDomain.pdb
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Debug\Microsoft.Web.Infrastructure.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Debug\Newtonsoft.Json.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Debug\Newtonsoft.Json.xml
+C:\Repositories\clonefromgithub\foody\FoodyDomain\obj\Debug\FoodyDomain.csprojResolveAssemblyReference.cache
+C:\Repositories\clonefromgithub\foody\FoodyDomain\obj\Debug\FoodyDomain.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\obj\Debug\FoodyDomain.pdb

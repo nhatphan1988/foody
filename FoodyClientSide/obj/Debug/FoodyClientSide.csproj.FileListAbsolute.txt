@@ -21,3 +21,6 @@ C:\setting project\Demo\Foody\Foody\FoodyClientSide\bin\Debug\Newtonsoft.Json.xm
 C:\setting project\Demo\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.csprojResolveAssemblyReference.cache
 C:\setting project\Demo\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.exe
 C:\setting project\Demo\Foody\Foody\FoodyClientSide\obj\Debug\FoodyClientSide.pdb
+C:\Repositories\clonefromgithub\foody\FoodyClientSide\bin\Debug\FoodyClientSide.exe.config
+C:\Repositories\clonefromgithub\foody\FoodyClientSide\obj\Debug\FoodyClientSide.exe
+C:\Repositories\clonefromgithub\foody\FoodyClientSide\obj\Debug\FoodyClientSide.pdb

@@ -528,3 +528,9 @@ C:\Repositories\clonefromgithub\foody\Foody\obj\Debug\Foody.csproj.App.config
 C:\Repositories\clonefromgithub\foody\Foody\obj\Debug\Foody.csprojResolveAssemblyReference.cache
 C:\Repositories\clonefromgithub\foody\Foody\obj\Debug\Foody.dll
 C:\Repositories\clonefromgithub\foody\Foody\obj\Debug\Foody.pdb
+C:\Repositories\clonefromgithub\foody\Foody\bin\MvcValidationExtensions.dll
+C:\Repositories\clonefromgithub\foody\Foody\bin\Validation.dll
+C:\Repositories\clonefromgithub\foody\Foody\bin\Validation.xml
+C:\Repositories\clonefromgithub\foody\Foody\bin\log4net.dll
+C:\Repositories\clonefromgithub\foody\Foody\bin\this.Log.dll
+C:\Repositories\clonefromgithub\foody\Foody\bin\log4net.xml

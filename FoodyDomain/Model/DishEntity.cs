@@ -5,7 +5,7 @@ using System.Text;
 
 namespace FoodyDomain.Model
 {
-    public class Dish:IEntity
+    public class DishEntity:IEntity
     {
     }
 }
