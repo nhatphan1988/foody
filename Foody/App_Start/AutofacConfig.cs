@@ -48,6 +48,7 @@ namespace Foody.App_Start
             //builder.Register(c => new LoggingCardService(c.Resolve<ICardService>())).As<ICardService>().InstancePerRequest();
             var container = builder.Build();
             // Set MVC DI resolver to use our Autofac container
+
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }
     }
