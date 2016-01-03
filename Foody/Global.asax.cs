@@ -1,16 +1,12 @@
 ﻿using Autofac;
 using Foody.App_Start;
-using FoodyDomain.Model;
 using Foody.Config;
-using FoodyRespository.Respository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Web;
 using System.Web.Http;
 using System.Web.Mvc;
 using System.Web.Optimization;
 using System.Web.Routing;
+using log4net;
+using System.IO;
 
 namespace Foody
 {
@@ -23,6 +19,8 @@ namespace Foody
 
         protected void Application_Start()
         {
+            log4net.Config.XmlConfigurator.Configure(new FileInfo(Server.MapPath("~/Web.config")));
+
             AutofacConfig.ConfigureContainer();
             AreaRegistration.RegisterAllAreas();
             WebApiConfig.Register(GlobalConfiguration.Configuration);
@@ -30,7 +28,7 @@ namespace Foody
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
-            AutoMapperConfig.RegisterMappings();
+            AutoMapperConfig.RegisterMappings();            
         }
     }
 }

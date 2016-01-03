@@ -1,5 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
+using Foody.Models;
+using Foody.Services;
 using FoodyDomain.Model;
 using FoodyRespository.Respository;
 using System;
@@ -10,39 +12,8 @@ using System.Web.Mvc;
 
 namespace Foody.App_Start
 {
-    public interface A
-    {
-        void Create();
-    }
-    public interface B
-    {
-        void Create(IContainer container);
-    }
-    public class B1 : B
-    {
-        IContainer _container;
-        A a;
-        public void Create(IContainer container)
-        {
-            _container = container;
-            a = container.Resolve<A>();
-            a.Create();
-        }
-
-
-    }
-
-    public class A1: A
-    {
-        public void Create()
-        { }
-
-
-    }
     public class AutofacConfig
     {
-        
-
         public static void ConfigureContainer()
         {
             var builder = new ContainerBuilder();
@@ -50,11 +21,32 @@ namespace Foody.App_Start
             // Register dependencies in controllers
             builder.RegisterControllers(typeof(MvcApplication).Assembly);
             builder.RegisterType<MenuResponsitory>().As<FoodyDomain.IResponsitory<MenuEntity>>().InstancePerRequest();
-            builder.RegisterType<B1>().As<B>();
-            builder.RegisterType<A1>().As<A>();
+            builder.Register(c => new HttpContextWrapper(HttpContext.Current))
+                            .As<HttpContextBase>()
+                            .InstancePerRequest();
+            builder.Register(c => c.Resolve<HttpContextBase>().Request)
+                .As<HttpRequestBase>()
+                .InstancePerRequest();
+            builder.Register(c => c.Resolve<HttpContextBase>().Response)
+                .As<HttpResponseBase>()
+                .InstancePerRequest();
+            builder.Register(c => c.Resolve<HttpContextBase>().Server)
+                .As<HttpServerUtilityBase>()
+                .InstancePerRequest();
+            builder.Register(c => c.Resolve<HttpContextBase>().Session)
+                .As<HttpSessionStateBase>()
+                .InstancePerRequest();
+            builder.RegisterType<LoggingCardService>().InstancePerRequest();
+            builder.RegisterType<CardService>().InstancePerRequest();
+            builder.Register(c =>
+            {
+                ICardService cardService = c.Resolve<CardService>();
+                cardService = c.Resolve<LoggingCardService>(TypedParameter.From(cardService));
+                return cardService;
+            }).As<ICardService>();
+            // builder.Register(c => new CardService(c.Resolve<HttpContextBase>())).As<ICardService>().InstancePerRequest();
+            //builder.Register(c => new LoggingCardService(c.Resolve<ICardService>())).As<ICardService>().InstancePerRequest();
             var container = builder.Build();
-            B b = container.Resolve<B>();
-            b.Create(container);
             // Set MVC DI resolver to use our Autofac container
             DependencyResolver.SetResolver(new AutofacDependencyResolver(container));
         }

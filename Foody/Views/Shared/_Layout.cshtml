@@ -3,7 +3,6 @@
 <head>
     <meta charset="utf-8" />
     <title>@ViewBag.Title - My ASP.NET MVC Application</title>
-    
     @Styles.Render("~/Content/css")
     @Scripts.Render("~/bundles/underscore")
     @Scripts.Render("~/bundles/angular")
@@ -12,6 +11,7 @@
     @Scripts.Render("~/bundles/menuCtr")
     @Scripts.Render("~/bundles/jquery")
     @Scripts.Render("~/bundles/bootstrap")
+
 </head>
 <body class="color-gray-f1f2f2">
     <div class="body-center">
@@ -42,11 +42,13 @@
                             </ul>
                             <ul class="nav navbar-nav navbar-right">
                                 <li>
-                                    <form class="navbar-form navbar-right" role="search" action="~/Menu/SearchMenuName" method="post">
+                                    <form class="navbar-form navbar-right" role="search" action="~/Menu/SearchMenuName" method="post" id="searchFormTop">
                                         <div class="form-group">
                                             <input type="text" class="form-control" placeholder="Search" name="menuName">
+                                            <a class="ico-search" onclick="$('#searchFormTop').submit()">
+                                                <span class="fa fa-search"></span>
+                                            </a>
                                         </div>
-                                        <button type="submit" class="btn btn-primary">Submit</button>
                                     </form>
                                 </li>
                             </ul>

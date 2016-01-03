@@ -27,10 +27,22 @@ namespace Foody
 
             bundles.Add(new ScriptBundle("~/bundles/jqueryval").Include(
                         "~/Scripts/jquery.unobtrusive*",
-                        "~/Scripts/jquery.validate*"));
+                        "~/Scripts/jquery.validate*",
+                        "~/Scripts/jquery.validate-vsdoc.js"));
 
             bundles.Add(new ScriptBundle("~/bundles/uikit").Include(
             "~/Scripts/uikit.js"));
+                      
+            bundles.Add(new ScriptBundle("~/bundles/microsoftajax").Include(
+                    "~/Scripts/MicrosoftAjax.debug.js"
+                    ));
+            bundles.Add(new ScriptBundle("~/bundles/microsoftmvcajax").Include(
+                    "~/Scripts/MicrosoftMvcAjax.debug.js"
+                    ));
+            bundles.Add(new ScriptBundle("~/bundles/microsoftmvcvalidation").Include(
+                    "~/Scripts/MicrosoftMvcValidation.debug.js"
+                    ));
+
 
             // Use the development version of Modernizr to develop with and learn from. Then, when you're
             // ready for production, use the build tool at http://modernizr.com to pick only the tests you need.
@@ -56,7 +68,8 @@ namespace Foody
                "~/Content/bootstrap-theme.css",
                "~/Content/uikit.css", 
                "~/Content/site.css",
-               "~/Content/menu.css"
+               "~/Content/menu.css",
+               "~/Content/font-awesome.css"
                ));
         }
     }
