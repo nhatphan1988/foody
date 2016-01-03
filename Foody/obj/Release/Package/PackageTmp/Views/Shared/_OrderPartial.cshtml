@@ -1,0 +1,43 @@
+﻿<div ng-controller="orderCtr">
+    <div class="col-md-12 row-expand">
+            <div class="row row-content-expand">
+                <div class="col-md-12 text-center bold">ĐƠN HÀNG</div>
+            </div>
+            <div class="row row-center background-caretblue">
+                <div class="col-md-3 bold">
+                    Số lượng
+                </div>
+                <div class="col-md-5 bold">
+                    Món ăn
+                </div>
+                <div class="col-md-4 bold">
+                    Giá
+                </div>
+            </div>
+            <div ng-repeat="cartItem in cartItems track by $index">
+                <div class="row row-center">
+                    <div class="col-md-3">
+                        <i class="decrease" ng-click="removeCartItem(cartItem)"></i>                     
+                        <input class="txt-sm text-center inline" id="Number" name="Number" type="text" value="{{cartItem.Number}}" maxlength="2"/>
+                        <i class="increase" ng-click="addCartItem(cartItem)"></i>
+                    </div>
+                    <div class="col-md-5">
+                        {{cartItem.Name}}
+                    </div>
+                    <div class="col-md-4">
+                        {{cartItem.Price}}
+                    </div>
+                </div>
+            </div>
+            <div class="row row-center border-top">
+                <div class="col-md-3 ">
+                </div>
+                <div class="col-md-5 bold">
+                    Tổng cộng:
+                </div>
+                <div class="col-md-4 red">
+                    {{sumPrice()}}
+                </div>
+            </div>
+        </div>
+    </div>

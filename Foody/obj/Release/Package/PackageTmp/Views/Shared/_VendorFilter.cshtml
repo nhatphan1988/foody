@@ -1,0 +1,24 @@
+﻿@*<div class="col-md-12">
+    <div class="main-search-container row-content-expand">
+        <div class="row">
+            <div class="col-md-12 row-center text-right">
+                @Html.DropDownList("city", new List<SelectListItem>() {
+                    new SelectListItem(){Text="Hồ Chí Minh",Value="HCM",Selected=true },
+                    new SelectListItem() { Text = "Hà Nội", Value = "HN"}},
+                    new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-12 row-center text-right">
+                @Html.DropDownList("district", new List<SelectListItem>() {
+                    new SelectListItem(){Text="District 1",Value="1",Selected=true }}, 
+                    new { @class = "form-control" })
+            </div>
+        </div>
+        <div class="btn btn-default">
+            Tìm kiếm
+        </div>
+    </div>
+</div>*@
+
+

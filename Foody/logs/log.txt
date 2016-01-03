@@ -1,0 +1,4 @@
+INFO  2016-01-02 15:46:31,016 59851ms CardService            Add                - Add Dish
+INFO  2016-01-02 15:47:51,693 140528ms CardService            Add                - Add Dish
+INFO  2016-01-02 15:47:56,223 145058ms CardService            Add                - Add Dish
+INFO  2016-01-03 14:31:21,983 28050ms LoggingCardService     Add                - Add Dish

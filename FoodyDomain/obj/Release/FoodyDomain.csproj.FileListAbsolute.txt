@@ -1,0 +1,8 @@
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Release\FoodyDomain.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Release\FoodyDomain.pdb
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Release\Microsoft.Web.Infrastructure.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Release\Newtonsoft.Json.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\bin\Release\Newtonsoft.Json.xml
+C:\Repositories\clonefromgithub\foody\FoodyDomain\obj\Release\FoodyDomain.csprojResolveAssemblyReference.cache
+C:\Repositories\clonefromgithub\foody\FoodyDomain\obj\Release\FoodyDomain.dll
+C:\Repositories\clonefromgithub\foody\FoodyDomain\obj\Release\FoodyDomain.pdb

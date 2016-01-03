@@ -1,0 +1,6 @@
+C:\Repositories\clonefromgithub\foody\FoodyServiceWCF\bin\FoodyServiceWCF.dll.config
+C:\Repositories\clonefromgithub\foody\FoodyServiceWCF\bin\FoodyServiceWCF.dll
+C:\Repositories\clonefromgithub\foody\FoodyServiceWCF\bin\FoodyServiceWCF.pdb
+C:\Repositories\clonefromgithub\foody\FoodyServiceWCF\obj\Release\FoodyServiceWCF.csprojResolveAssemblyReference.cache
+C:\Repositories\clonefromgithub\foody\FoodyServiceWCF\obj\Release\FoodyServiceWCF.dll
+C:\Repositories\clonefromgithub\foody\FoodyServiceWCF\obj\Release\FoodyServiceWCF.pdb
