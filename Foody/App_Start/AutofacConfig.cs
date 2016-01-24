@@ -1,12 +1,7 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
-using Foody.Models;
-using Foody.Services;
 using FoodyDomain.Model;
 using FoodyRespository.Respository;
-using System;
-using System.Collections.Generic;
-using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 
@@ -36,14 +31,14 @@ namespace Foody.App_Start
             builder.Register(c => c.Resolve<HttpContextBase>().Session)
                 .As<HttpSessionStateBase>()
                 .InstancePerRequest();
-            builder.RegisterType<LoggingCardService>().InstancePerRequest();
-            builder.RegisterType<CardService>().InstancePerRequest();
-            builder.Register(c =>
-            {
-                ICardService cardService = c.Resolve<CardService>();
-                cardService = c.Resolve<LoggingCardService>(TypedParameter.From(cardService));
-                return cardService;
-            }).As<ICardService>();
+            //builder.RegisterType<LoggingCardService>().InstancePerRequest();
+            //builder.RegisterType<CardService>().InstancePerRequest();
+            //builder.Register(c =>
+            //{
+            //    ICardService cardService = c.Resolve<CardService>();
+            //    cardService = c.Resolve<LoggingCardService>(TypedParameter.From(cardService));
+            //    return cardService;
+            //}).As<ICardService>();
             // builder.Register(c => new CardService(c.Resolve<HttpContextBase>())).As<ICardService>().InstancePerRequest();
             //builder.Register(c => new LoggingCardService(c.Resolve<ICardService>())).As<ICardService>().InstancePerRequest();
             var container = builder.Build();

@@ -7,6 +7,9 @@ using System.Web.Optimization;
 using System.Web.Routing;
 using log4net;
 using System.IO;
+using System;
+using System.Web;
+using System.Net;
 
 namespace Foody
 {
@@ -23,12 +26,34 @@ namespace Foody
 
             AutofacConfig.ConfigureContainer();
             AreaRegistration.RegisterAllAreas();
-            WebApiConfig.Register(GlobalConfiguration.Configuration);
+            //WebApiConfig.Register(GlobalConfiguration.Configuration);
             FilterConfig.RegisterGlobalFilters(GlobalFilters.Filters);
             RouteConfig.RegisterRoutes(RouteTable.Routes);
             BundleConfig.RegisterBundles(BundleTable.Bundles);
             AuthConfig.RegisterAuth();
             AutoMapperConfig.RegisterMappings();            
+        }
+
+        protected void Application_Error()
+        {
+            Exception unhandledException = Server.GetLastError();
+            HttpException httpException = unhandledException as HttpException;
+            if (httpException == null)
+            {
+                Exception innerException = unhandledException.InnerException;
+                httpException = innerException as HttpException;
+            }
+
+            if (httpException != null)
+            {
+                int httpCode = httpException.GetHttpCode();
+                switch (httpCode)
+                {
+                    case (int)HttpStatusCode.InternalServerError:
+                        Response.Redirect("/Error/Unknown");
+                        break;
+                }
+            }
         }
     }
 }

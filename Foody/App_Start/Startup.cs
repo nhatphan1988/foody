@@ -14,6 +14,8 @@ namespace Foody.App_Start
         public void Configuration(IAppBuilder app)
         {
             ConfigureAuth(app);
+            var webApiConfiguration = ConfigureWebApi();
+            app.UseWebApi(webApiConfiguration);
         }
 
         private void ConfigureAuth(IAppBuilder app)
@@ -30,6 +32,16 @@ namespace Foody.App_Start
             app.UseOAuthAuthorizationServer(OAuthOptions);
             app.UseOAuthBearerAuthentication(
                     new OAuthBearerAuthenticationOptions());
+        }
+
+        private HttpConfiguration ConfigureWebApi()
+        {
+            var config = new HttpConfiguration();
+            config.Routes.MapHttpRoute(
+                "DefaultApi",
+                "api/{controller}/{id}",
+                new { id = RouteParameter.Optional });
+            return config;
         }
     }
 }

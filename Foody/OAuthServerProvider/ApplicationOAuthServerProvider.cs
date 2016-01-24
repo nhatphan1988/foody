@@ -35,7 +35,7 @@ namespace Foody.OAuthServerProvider
                 context.Rejected();
                 return;
             }
-
+            
             // Create or retrieve a ClaimsIdentity to represent the 
             // Authenticated user:
             ClaimsIdentity identity =

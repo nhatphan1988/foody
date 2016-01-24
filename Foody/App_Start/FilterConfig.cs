@@ -1,4 +1,5 @@
 ﻿using Foody.Controllers;
+using Foody.Filters;
 using System.Web;
 using System.Web.Mvc;
 

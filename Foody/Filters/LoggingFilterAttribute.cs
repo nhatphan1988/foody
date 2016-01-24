@@ -1,7 +1,7 @@
 ﻿using System.Diagnostics;
 using System.Web.Mvc;
 
-namespace Foody.Controllers
+namespace Foody.Filters
 {
     public class LoggingFilterAttribute : System.Web.Mvc.ActionFilterAttribute
     {
