@@ -1,1 +1,2 @@
 INFO  2016-01-03 15:24:49,976   449ms LoggingCardService     Add                - Add Dish
+INFO  2016-01-08 13:56:53,034   620ms Logger                 Add                - Add Dish

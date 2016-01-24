@@ -13,10 +13,10 @@ namespace FoodyResponsitory
     using System.Data.Entity;
     using System.Data.Entity.Infrastructure;
     
-    public partial class FoodyEntities1 : DbContext
+    public partial class FoodyEntities2 : DbContext
     {
-        public FoodyEntities1()
-            : base("name=FoodyEntities1")
+        public FoodyEntities2()
+            : base("name=FoodyEntities2")
         {
         }
     
@@ -26,7 +26,7 @@ namespace FoodyResponsitory
         }
     
         public virtual DbSet<sysdiagram> sysdiagrams { get; set; }
-        public virtual DbSet<Restaurant> Restaurants { get; set; }
         public virtual DbSet<Menu> Menus { get; set; }
+        public virtual DbSet<Restaurant> Restaurants { get; set; }
     }
 }

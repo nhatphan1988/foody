@@ -12,16 +12,20 @@
   </EntityType>
   <EntityContainer Name="FoodyEntities1" annotation:LazyLoadingEnabled="true">
     <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
-    <EntitySet Name="Restaurants" EntityType="FoodyModel.Restaurant" />
     <EntitySet Name="Menus" EntityType="FoodyModel.Menu" />
+    <EntitySet Name="Restaurants" EntityType="FoodyModel.Restaurant" />
   </EntityContainer>
-  <EntityType Name="Restaurant">
-    <Key>
-      <PropertyRef Name="ID" />
-    </Key>
-    <Property Name="ID" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="false" />
-  </EntityType>
   <EntityType Name="Menu">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="String" Nullable="false" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Description" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Price" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="ImageUrl" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="Restaurant">
     <Key>
       <PropertyRef Name="Id" />
     </Key>

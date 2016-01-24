@@ -14,6 +14,19 @@ namespace FoodyResponsitory
     
     public partial class Restaurant
     {
-        public string ID { get; set; }
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2214:DoNotCallOverridableMethodsInConstructors")]
+        public Restaurant()
+        {
+            this.Menus = new HashSet<Menu>();
+        }
+    
+        public string Id { get; set; }
+        public string Name { get; set; }
+        public string Description { get; set; }
+        public string Price { get; set; }
+        public string ImageUrl { get; set; }
+    
+        [System.Diagnostics.CodeAnalysis.SuppressMessage("Microsoft.Usage", "CA2227:CollectionPropertiesShouldBeReadOnly")]
+        public virtual ICollection<Menu> Menus { get; set; }
     }
 }

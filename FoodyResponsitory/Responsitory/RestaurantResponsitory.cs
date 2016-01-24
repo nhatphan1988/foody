@@ -9,47 +9,56 @@ using FoodyResponsitory;
 
 namespace FoodyRespository.Respository
 {
-    public class RestaurantResponsitory:IResponsitory<RestaurantEntity>
+    public class RestaurantResponsitory
+        //:IResponsitory<RestaurantEntity>
     {
-        FoodyEntities1 _restaurantContext;
+        FoodyEntities2 context;
 
         public RestaurantResponsitory()
         {
-            _restaurantContext = new FoodyEntities1();
+            context = new FoodyEntities2();
  
         }
         public IEnumerable<RestaurantEntity> List
         {
             get
             {
-                return AutoMapper.Mapper.Map<List<RestaurantEntity>>(_restaurantContext.Restaurants);
+                return AutoMapper.Mapper.Map<List<RestaurantEntity>>(context.Restaurants);
             }
             
         }
 
+        public IEnumerable<RestaurantEntity> ListById
+        {
+            get
+            {
+                return AutoMapper.Mapper.Map<List<RestaurantEntity>>(context.Restaurants).SelectEntityById();
+            }
+        }
+
         public void Add(RestaurantEntity entity)
         {
-            _restaurantContext.Restaurants.Add(AutoMapper.Mapper.Map<Restaurant>(entity));
-            _restaurantContext.SaveChanges();
+            context.Restaurants.Add(AutoMapper.Mapper.Map<Restaurant>(entity));
+            context.SaveChanges();
         }
 
         public void Delete(RestaurantEntity entity)
         {
-            _restaurantContext.Restaurants.Remove(AutoMapper.Mapper.Map<Restaurant>(entity));
-            _restaurantContext.SaveChanges();
+            context.Restaurants.Remove(AutoMapper.Mapper.Map<Restaurant>(entity));
+            context.SaveChanges();
         }
 
         public void Update(RestaurantEntity entity)
         {
-            _restaurantContext.Entry(AutoMapper.Mapper.Map<Restaurant>(entity)).State = 
+            context.Entry(AutoMapper.Mapper.Map<Restaurant>(entity)).State = 
                 System.Data.Entity.EntityState.Modified;
-            _restaurantContext.SaveChanges();
+            context.SaveChanges();
             
         }
 
         public RestaurantEntity FindById(string Id)
         {
-            var result = (from r in _restaurantContext.Restaurants where r.ID == Id select r).FirstOrDefault();
+            var result = (from r in context.Restaurants where r.Id == Id select r).FirstOrDefault();
             return AutoMapper.Mapper.Map<RestaurantEntity>(result); 
         }
     }

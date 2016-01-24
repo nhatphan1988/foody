@@ -12,13 +12,6 @@
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>
-    <EntitySetMapping Name="Restaurants">
-      <EntityTypeMapping TypeName="IsTypeOf(FoodyModel.Restaurant)">
-        <MappingFragment StoreEntitySet="Restaurants">
-          <ScalarProperty Name="ID" ColumnName="ID" />
-        </MappingFragment>
-      </EntityTypeMapping>
-    </EntitySetMapping>
     <EntitySetMapping Name="Menus">
       <EntityTypeMapping TypeName="IsTypeOf(FoodyModel.Menu)">
         <MappingFragment StoreEntitySet="Menus">
@@ -27,6 +20,17 @@
           <ScalarProperty Name="Description" ColumnName="Description" />
           <ScalarProperty Name="Price" ColumnName="Price" />
           <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Restaurants">
+      <EntityTypeMapping TypeName="FoodyModel.Restaurant">
+        <MappingFragment StoreEntitySet="Restaurants">
+          <ScalarProperty Name="ImageUrl" ColumnName="ImageUrl" />
+          <ScalarProperty Name="Price" ColumnName="Price" />
+          <ScalarProperty Name="Description" ColumnName="Description" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
         </MappingFragment>
       </EntityTypeMapping>
     </EntitySetMapping>

@@ -185,29 +185,29 @@ namespace Foody.Tests.Controllers
     public class OrderControllerTest
     {
         
-        [TestMethod]
-        public void TestAddOrder()
-        {
-            log4net.Config.XmlConfigurator.Configure(new FileInfo(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile));
-            CardService cardService = new CardService(MvcMockHelpers.FakeHttpContext());
-            OrderController controller = new OrderController(new LoggingCardService(cardService));
-            controller.AddDish(new Dish());
-            ViewResult result = controller.GetNumberOfDishes() as ViewResult;
-            Assert.AreEqual(1, result.Model);
-        }
+        //[TestMethod]
+        //public void TestAddOrder()
+        //{
+        //    log4net.Config.XmlConfigurator.Configure(new FileInfo(AppDomain.CurrentDomain.SetupInformation.ConfigurationFile));
+        //    CardService cardService = new CardService(MvcMockHelpers.FakeHttpContext());
+        //    OrderController controller = new OrderController(new LoggingCardService(cardService));
+        //    controller.AddDish(new Dish());
+        //    ViewResult result = controller.GetNumberOfDishes() as ViewResult;
+        //    Assert.AreEqual(1, result.Model);
+        //}
 
-        [TestMethod]
-        public void TestFakeHttpContext()
-        {
-            HttpContextBase httpContext = MvcMockHelpers.FakeHttpContext();
-            httpContext.Session["session"]="session";
-            Assert.AreEqual(httpContext.Session["session"], "session");
-        }
+        //[TestMethod]
+        //public void TestFakeHttpContext()
+        //{
+        //    HttpContextBase httpContext = MvcMockHelpers.FakeHttpContext();
+        //    httpContext.Session["session"]="session";
+        //    Assert.AreEqual(httpContext.Session["session"], "session");
+        //}
 
-        [TestMethod]
-        public void IntergrationTestAddOrder()
-        {
+        //[TestMethod]
+        //public void IntergrationTestAddOrder()
+        //{
 
-        }
+        //}
     } 
 }

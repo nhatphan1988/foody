@@ -6,46 +6,83 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using FoodyResponsitory;
+using System.Threading.Tasks;
+using System.Data.Entity;
 
 namespace FoodyRespository.Respository
 {
+    public static class ExtensionMethod
+    {
+        public static IEnumerable<T> SelectEntityById<T>(this IEnumerable<T> list) where T : IEntity
+        {
+            var result = list
+                    .Where(f => f.Id == "1")
+                    .ToList();
+            
+            return result;
+
+
+        }
+        
+    }
     public class MenuResponsitory:IResponsitory<MenuEntity>
     {
-        FoodyEntities1 _menuContext;
+        FoodyEntities2 context;
 
         public MenuResponsitory()
         {
-            _menuContext = new FoodyEntities1();
+            context = new FoodyEntities2();
  
         }
         public IEnumerable<MenuEntity> List
         {
             get
             {
-                return AutoMapper.Mapper.Map<List<MenuEntity>>(_menuContext.Menus);
+
+                return AutoMapper.Mapper.Map<List<MenuEntity>>(context.Menus);
             }
-            
         }
 
-        public void Add(MenuEntity entity)
+        public async Task<IEnumerable<MenuEntity>> ToListAsync()
+        {
+            List<Menu> menus = await context.Menus.ToListAsync();
+
+            return AutoMapper.Mapper.Map<List<MenuEntity>>(menus);
+
+        }
+
+        public IEnumerable<MenuEntity> ListById
+        {
+            get
+            {
+                return AutoMapper.Mapper.Map<List<MenuEntity>>(context.Menus).SelectEntityById();
+            }
+        }
+
+        public async Task<int> AddAsync(MenuEntity entity)
+        {
+            context.Menus.Add(AutoMapper.Mapper.Map<Menu>(entity));
+            return await context.SaveChangesAsync();
+        }
+
+        public async Task<int> DeleteAsync(string id)
+        {
+            Menu menu = await context.Menus.FindAsync(id);
+            context.Menus.Remove(menu);
+            return await context.SaveChangesAsync();
+
+        }
+
+        public async Task<int> UpdateAsync(MenuEntity entity)
         {
 
+            return 0;
         }
 
-        public void Delete(MenuEntity entity)
+        public async Task<MenuEntity> FindAsync(string id)
         {
-
+            return AutoMapper.Mapper.Map<MenuEntity>(await context.Menus.FindAsync(id));
         }
-
-        public void Update(MenuEntity entity)
-        {
-
-        }
-
-        public MenuEntity FindById(string Id)
-        {
-            return new MenuEntity();
-        }
-
+        
     }
 }
