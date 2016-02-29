@@ -459,3 +459,6 @@ C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\Autofac.Integration.
 C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\Autofac.Integration.Mvc.xml
 C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\System.Web.Http.Owin.dll
 C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\System.Web.Http.Owin.xml
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\System.Web.Http.Cors.dll
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\System.Web.Cors.dll
+C:\Repositories\clonefromgithub\foody\Foody.Tests\bin\Debug\System.Web.Http.Cors.xml

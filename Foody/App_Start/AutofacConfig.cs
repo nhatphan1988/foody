@@ -1,7 +1,9 @@
 ﻿using Autofac;
 using Autofac.Integration.Mvc;
 using FoodyDomain.Model;
+using FoodyResponsitory;
 using FoodyRespository.Respository;
+using System.Data.Entity;
 using System.Web;
 using System.Web.Mvc;
 
@@ -31,6 +33,9 @@ namespace Foody.App_Start
             builder.Register(c => c.Resolve<HttpContextBase>().Session)
                 .As<HttpSessionStateBase>()
                 .InstancePerRequest();
+
+            builder.RegisterType<FoodyEntities>().As<DbContext>().InstancePerRequest();
+
             //builder.RegisterType<LoggingCardService>().InstancePerRequest();
             //builder.RegisterType<CardService>().InstancePerRequest();
             //builder.Register(c =>

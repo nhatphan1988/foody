@@ -37,6 +37,7 @@ namespace Foody.App_Start
         private HttpConfiguration ConfigureWebApi()
         {
             var config = new HttpConfiguration();
+            config.EnableCors();
             config.Routes.MapHttpRoute(
                 "DefaultApi",
                 "api/{controller}/{id}",

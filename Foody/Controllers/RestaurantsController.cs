@@ -13,7 +13,7 @@ namespace Foody.Controllers
 {
     public class RestaurantsController : Controller
     {
-        private FoodyEntities2 db = new FoodyEntities2();
+        private FoodyEntities db = new FoodyEntities();
 
         // GET: Restaurants
         public async Task<ActionResult> Index()

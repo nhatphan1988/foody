@@ -57,6 +57,7 @@
     <Compile Include="Model\DishEntity.cs" />
     <Compile Include="Model\MenuEntity.cs" />
     <Compile Include="Model\RestaurantEntity.cs" />
+    <Compile Include="Model\UserEntity.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>

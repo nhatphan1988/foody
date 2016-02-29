@@ -12,11 +12,11 @@ namespace FoodyRespository.Respository
     public class RestaurantResponsitory
         //:IResponsitory<RestaurantEntity>
     {
-        FoodyEntities2 context;
+        FoodyEntities context;
 
         public RestaurantResponsitory()
         {
-            context = new FoodyEntities2();
+            context = new FoodyEntities();
  
         }
         public IEnumerable<RestaurantEntity> List

@@ -1,6 +1,5 @@
 ﻿using System;
 using System.Web;
-using Foody.Models;
 
 namespace Foody.Services
 {

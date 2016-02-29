@@ -9,9 +9,9 @@ namespace Foody.Tests.Controllers
     public class AboutControllerTest
     {
         [Test]
-        public void About()
+        public void About() 
         {
-            
+
             // Arrange
             AboutController controller = new AboutController();
 

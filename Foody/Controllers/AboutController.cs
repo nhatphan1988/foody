@@ -7,7 +7,7 @@ namespace Foody.Controllers
         public ActionResult About()
         {
             return View("About");
-        }
+        }   
 
         public ActionResult Difference()
         {

@@ -27,11 +27,11 @@ namespace FoodyRespository.Respository
     }
     public class MenuResponsitory:IResponsitory<MenuEntity>
     {
-        FoodyEntities2 context;
+        FoodyEntities context;
 
         public MenuResponsitory()
         {
-            context = new FoodyEntities2();
+            context = new FoodyEntities();
  
         }
         public IEnumerable<MenuEntity> List

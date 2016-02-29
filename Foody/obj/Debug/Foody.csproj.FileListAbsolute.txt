@@ -534,3 +534,6 @@ C:\Repositories\clonefromgithub\foody\Foody\bin\Validation.xml
 C:\Repositories\clonefromgithub\foody\Foody\bin\log4net.dll
 C:\Repositories\clonefromgithub\foody\Foody\bin\this.Log.dll
 C:\Repositories\clonefromgithub\foody\Foody\bin\log4net.xml
+C:\Repositories\clonefromgithub\foody\Foody\bin\System.Web.Cors.dll
+C:\Repositories\clonefromgithub\foody\Foody\bin\System.Web.Http.Cors.dll
+C:\Repositories\clonefromgithub\foody\Foody\bin\System.Web.Http.Cors.xml

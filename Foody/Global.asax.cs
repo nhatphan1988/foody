@@ -18,7 +18,8 @@ namespace Foody
 
     public class MvcApplication : System.Web.HttpApplication
     {
-        private static IContainer Container { get; set; }
+        private static readonly log4net.ILog log = log4net.LogManager.GetLogger
+    (System.Reflection.MethodBase.GetCurrentMethod().DeclaringType);
 
         protected void Application_Start()
         {
@@ -47,10 +48,11 @@ namespace Foody
             if (httpException != null)
             {
                 int httpCode = httpException.GetHttpCode();
+                log.Error(httpException.Message);
                 switch (httpCode)
                 {
                     case (int)HttpStatusCode.InternalServerError:
-                        Response.Redirect("/Error/Unknown");
+                        Response.Redirect("/Errors/Unknown");
                         break;
                 }
             }

@@ -146,7 +146,11 @@
   <ItemGroup>
     <Compile Include="Controllers\AccountControllerTest.cs" />
     <Compile Include="Controllers\AboutControllerTest.cs" />
+    <Compile Include="Controllers\BeforeEachAttribute.cs" />
+    <Compile Include="Controllers\Class1.cs" />
+    <Compile Include="Controllers\IPracticeClass.cs" />
     <Compile Include="Controllers\OrderControllerTest.cs" />
+    <Compile Include="Controllers\PracticeClass.cs" />
     <Compile Include="Controllers\RestaurantControllerTest.cs" />
     <Compile Include="Controllers\MenuControllerTest.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />

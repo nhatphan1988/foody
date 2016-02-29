@@ -1,5 +1,4 @@
 ﻿using Foody.Controllers;
-using Foody.Models;
 using Foody.Services;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using Moq;

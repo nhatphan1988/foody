@@ -2,3 +2,18 @@ INFO  2016-01-02 15:46:31,016 59851ms CardService            Add                
 INFO  2016-01-02 15:47:51,693 140528ms CardService            Add                - Add Dish
 INFO  2016-01-02 15:47:56,223 145058ms CardService            Add                - Add Dish
 INFO  2016-01-03 14:31:21,983 28050ms LoggingCardService     Add                - Add Dish
+ERROR 2016-02-17 04:41:50,632  2830ms MvcApplication         Application_Error  - 
+ERROR 2016-02-17 04:41:50,657  2855ms MvcApplication         Application_Error  - 
+ERROR 2016-02-17 04:42:38,898  3057ms MvcApplication         Application_Error  - 
+ERROR 2016-02-17 04:43:32,164  2881ms MvcApplication         Application_Error  - 
+ERROR 2016-02-17 04:57:22,492  2915ms MvcApplication         Application_Error  - Error executing child request for handler 'System.Web.Mvc.HttpHandlerUtil+ServerExecuteHttpHandlerAsyncWrapper'.
+ERROR 2016-02-17 04:58:44,136  6860ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 04:58:44,225  6949ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 05:03:50,613  6656ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 05:03:50,713  6756ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 05:10:32,192  5256ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 05:10:32,272  5336ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 05:13:36,798  6387ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 05:13:36,884  6473ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 15:39:56,264  6886ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.
+ERROR 2016-02-17 15:39:56,388  7010ms MvcApplication         Application_Error  - The controller for path '/Menu1' was not found or does not implement IController.

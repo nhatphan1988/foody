@@ -16,6 +16,8 @@ namespace Foody.Config
             AutoMapper.Mapper.CreateMap<Restaurant, RestaurantEntity>();
             AutoMapper.Mapper.CreateMap<MenuEntity, Menu>();
             AutoMapper.Mapper.CreateMap<Menu, MenuEntity>();
+            AutoMapper.Mapper.CreateMap<UserEntity, User>();
+            AutoMapper.Mapper.CreateMap<User, UserEntity>();
         }
     }
 }
